@@ -66,6 +66,7 @@ class CSVResultSerializer(ResultSerializer):
         # the serialiser writes bytes in the given encoding
         # in py3 csv.writer is unicode aware and writes STRINGS,
         # so we encode afterwards
+        print("From CSV\n\n\n")
 
         import codecs
 

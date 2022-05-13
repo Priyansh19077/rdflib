@@ -35,6 +35,7 @@ class TXTResultSerializer(ResultSerializer):
         """
         return a text table of query results
         """
+        print("From TXT\n\n\n")
 
         def c(s, w):
             """

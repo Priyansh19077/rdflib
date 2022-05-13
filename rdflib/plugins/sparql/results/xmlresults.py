@@ -110,7 +110,7 @@ class XMLResultSerializer(ResultSerializer):
         ResultSerializer.__init__(self, result)
 
     def serialize(self, stream: IO, encoding: str = "utf-8", **kwargs):
-
+        print("Inside Serialize\n\n\n")
         writer = SPARQLXMLWriter(stream, encoding)
         if self.result.type == "ASK":
             writer.write_header([])
